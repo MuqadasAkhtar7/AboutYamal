@@ -1,0 +1,9 @@
+name: CI Pipeline
+on: [push]
+jobs:
+ build:
+  runs-on: ubunto-latest
+  steps:
+   - uses: action/checkouts@v3
+   - name: Run a script
+     run: echo 'hello,world!'
